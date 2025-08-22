@@ -1,0 +1,16 @@
+
+:root { --brand:#004aad; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+.navbar { box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+.navbar-brand img { height:40px; vertical-align:middle; margin-right:.5rem; }
+.hero { background: var(--brand); color:#fff; padding: 90px 0 80px; text-align:center; }
+.hero h1 { font-weight:700; }
+.section-title { font-weight:700; text-align:center; margin: 0 0 1.5rem; }
+.feature-card { border:1px solid #eee; border-radius:12px; padding:18px; height:100%; }
+.muted { color:#6c757d; }
+.philosophy li, .why-us li { margin-bottom:.5rem; }
+.testimonial { background:#f8f9fa; border-radius:12px; padding:16px; margin-bottom:12px; }
+footer { background:#111; color:#aaa; padding:24px 0; }
+footer a { color:#ddd; text-decoration:none; margin:0 8px; }
+.logo-text { font-weight:700; }
+.whatsapp-btn { background:#25D366; border:none; }

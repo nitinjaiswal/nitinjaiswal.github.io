@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edspire Academy — Single Page</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="edspire.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="data:image/png;base64,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" alt="Edspire Logo"/>
+        <span class="logo-text">Edspire Academy</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#philosophy">Philosophy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 class="display-5">Empowering Every Learner — From Foundation to Future</h1>
+      <p class="lead">Coaching classes for School, College & Government Exams with NEP-aligned teaching methods.</p>
+      <div class="mt-3">
+        <a href="#courses" class="btn btn-light me-2">Explore Courses</a>
+        <a href="#contact" class="btn btn-outline-light me-2">Contact Us</a>
+        <a href="#contact" class="btn btn-warning">Join a Demo Class</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Our Highlights</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3"><div class="feature-card">🎓 Classes from Pre- Primary to 12th</div></div>
+        <div class="col-12 col-md-6 col-lg-3"><div class="feature-card">🎓 UG & Technical Coaching (BA, B.Com, B.Sc, B.Tech, BCA, Diploma)</div></div>
+        <div class="col-12 col-md-6 col-lg-3"><div class="feature-card">📘 Special NEP 2.0-Based Curriculum</div></div>
+        <div class="col-12 col-md-6 col-lg-3"><div class="feature-card">🧠 Child Psychology-Centric Teaching</div></div>
+      </div>
+      <div class="row g-3 mt-1">
+        <div class="col-12 col-md-6 col-lg-3"><div class="feature-card">📈 Govt Exam & CUET Preparation</div></div>
+        <div class="col-12 col-md-6 col-lg-3"><div class="feature-card">🏫 Located in Delhi | Experienced Faculty | Affordable Fees</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">About Edspire Academy</h2>
+      <p class="mb-3">Welcome to Edspire Academy, Delhi’s trusted education partner for school, college, and competitive exam preparation.</p>
+      <p class="mb-3">Founded with a mission to nurture academic excellence, we offer a structured and student-friendly learning environment. Our faculty is experienced, passionate, and committed to guiding students through every step of their academic journey.</p>
+      <p>Our approach is inspired by the National Education Policy (NEP) 2.0, integrating:</p>
+      <ul>
+        <li>📚 Multidisciplinary Learning</li>
+        <li>🧩 Constructive, Concept-Based Teaching</li>
+        <li>🧠 Child Psychology & Learner-Centric Pedagogy</li>
+        <li>📊 Special Lesson Plans tailored to individual progress</li>
+      </ul>
+      <p class="muted">We are proud to have a dedicated curriculum developer (former Kendriya Vidyalaya teacher) guiding outcomes.</p>
+    </div>
+  </section>
+
+  <section id="courses" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Courses We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5>📘 School Coaching (Pre- Primary to 12th)</h5>
+          <ul>
+            <li>All major subjects for CBSE/ICSE/State Boards</li>
+            <li>Regular tests, progress reports, and parent-teacher interaction</li>
+            <li>Foundation building with activity-based learning</li>
+            <li>Doubt-solving sessions</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>🎓 College Coaching (BA, B.Com, B.Sc)</h5>
+          <ul>
+            <li>Subject-specific support</li>
+            <li>University syllabus-aligned coaching</li>
+            <li>Doubt-clearing sessions, exam prep strategy</li>
+            <li>Conceptual clarity and writing practice</li>
+            <li>Notes, practice material, and exam prep</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row g-4 mt-1">
+        <div class="col-md-6">
+          <h5>🛠️ Technical & Professional Courses</h5>
+          <ul>
+            <li>B.Tech | BCA | Polytechnic / Diploma Courses</li>
+            <li>Subject tuitions (Maths, Programming, Mechanics, Electronics, etc.)</li>
+            <li>Lab work, project guidance, and practical support</li>
+            <li>Conceptual clarity + assignment/test support</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>🧭 Entrance & Competitive Exams</h5>
+          <ul>
+            <li>SSC, Banking, CTET, CUET, Railways, Delhi Police, etc.</li>
+            <li>Updated syllabus & expert guidance</li>
+            <li>Daily practice sheets & full-length test series</li>
+            <li>Personalized strategy & revision plans</li>
+            <li>Weekly test series, mock interviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="philosophy" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">We Don’t Just Teach — We Transform</h2>
+      <ul class="philosophy">
+        <li>NEP 2.0 framework to make education practical, engaging, and future-ready</li>
+        <li>Constructive learning model emphasizing understanding over rote learning</li>
+        <li>Child psychology principles for personal and joyful learning</li>
+        <li>Curriculum developer with KV background guiding outcomes</li>
+        <li>Focus on critical thinking, creativity, and skill development</li>
+      </ul>
+      <h5 class="mt-4">Why Choose Us</h5>
+      <ul class="why-us">
+        <li>Experienced & Qualified Teachers</li>
+        <li>Affordable Fees with Flexible Batches</li>
+        <li>Result-Oriented Approach</li>
+        <li>Regular Parent-Teacher Updates</li>
+        <li>Dedicated Study Materials</li>
+        <li>Free Demo Classes Available</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonial">“My son improved his grades significantly after joining this institute. Highly recommended!” — Parent of Class 10 Student</div>
+      <div class="testimonial">“The coaching for SSC exam here is top-notch. I cleared it in the first attempt.” — Ritika, Govt Exam Aspirant</div>
+      <div class="testimonial">“After joining this institute, my daughter not only improved her marks but became more confident. The NEP-style teaching really works!” — Mrs. Renu Sharma, Parent (Class 6)</div>
+      <div class="testimonial">“I cleared CUET with coaching from here. Teachers gave personal attention and helped with a smart plan.” — Rajat Verma, B.Sc Aspirant</div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p><strong>Address:</strong> RZ G-58 Sitapuri Part- 2 Gali no-2, Near Mother Dairy, Delhi-110045</p>
+      <p><strong>Phone / WhatsApp:</strong> 9990194025</p>
+      <p><strong>Email:</strong> edspirea@gmail.com</p>
+      <p><strong>Office Hours:</strong> Mon–Sat, 9:00 AM – 9:00 PM</p>
+      <form class="mt-3" onsubmit="sendToWhatsApp(); return false;">
+        <div class="row g-2">
+          <div class="col-md-4"><input id="name" class="form-control" type="text" placeholder="Name" required></div>
+          <div class="col-md-4"><input id="email" class="form-control" type="email" placeholder="Email" required></div>
+          <div class="col-md-4"><input id="phone" class="form-control" type="text" placeholder="Phone" required></div>
+        </div>
+        <div class="mt-2"><textarea id="message" class="form-control" rows="3" placeholder="Message" required></textarea></div>
+        <button class="btn btn-success mt-3 whatsapp-btn" type="submit">Send Message via WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <a class="navbar-brand d-inline-flex align-items-center mb-2" href="#home">
+        <img src="data:image/png;base64,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" alt="Edspire Logo"/>
+        <span class="logo-text">Edspire Academy</span>
+      </a>
+      <div class="small">© 2025 Edspire Academy • Proudly Teaching the Nation’s Future</div>
+      <div class="mt-2">
+        <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#courses">Courses</a> | <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function sendToWhatsApp() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var message = document.getElementById('message').value;
+      var url = "https://wa.me/919990194025?text="
+        + encodeURIComponent("New Enquiry from Edspire Academy Website\n"
+        + "Name: " + name + "\n"
+        + "Email: " + email + "\n"
+        + "Phone: " + phone + "\n"
+        + "Message: " + message);
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
